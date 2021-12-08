@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>The type of stand. Determines what food/beverages can be sold.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The type of stand. Determines what food/beverages can be sold.</inlineHelpText>
+    <label>Type</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open Rack</fullName>
+                <default>true</default>
+                <label>Open Rack</label>
+            </value>
+            <value>
+                <fullName>Platter Tower</fullName>
+                <default>false</default>
+                <label>Platter Tower</label>
+            </value>
+            <value>
+                <fullName>Refrigerated Drink Rack</fullName>
+                <default>false</default>
+                <label>Refrigerated Drink Rack</label>
+            </value>
+            <value>
+                <fullName>Refrigerated Rack</fullName>
+                <default>false</default>
+                <label>Refrigerated Rack</label>
+            </value>
+            <value>
+                <fullName>Freezer</fullName>
+                <default>false</default>
+                <label>Freezer</label>
+            </value>
+            <value>
+                <fullName>Cold Drink Dispenser</fullName>
+                <default>false</default>
+                <label>Cold Drink Dispenser</label>
+            </value>
+            <value>
+                <fullName>Hot Drink Dispenser</fullName>
+                <default>false</default>
+                <label>Hot Drink Dispenser</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

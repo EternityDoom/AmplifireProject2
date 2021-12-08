@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order__c</fullName>
+    <description>The order that a customer placed that resulted in this Food Stand being set up.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The order that a customer placed that resulted in this Food Stand being set up.</inlineHelpText>
+    <label>Order</label>
+    <referenceTo>Order</referenceTo>
+    <relationshipLabel>Food Stands</relationshipLabel>
+    <relationshipName>Food_Stands</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
