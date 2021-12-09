@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="caseId" type="Id"></aura:attribute>
+
+    <lightning:recordViewForm recordId="{!v.caseId}" objectApiName="Case">
+        <lightning:outputField fieldName="AccountId"></lightning:outputField>
+        <lightning:outputField fieldName="CaseNumber"></lightning:outputField>
+        <lightning:outputField fieldName="Reason"></lightning:outputField>
+        <lightning:outputField fieldName="ContactId"></lightning:outputField>
+        <lightning:outputField fieldName="Phone"></lightning:outputField>
+    </lightning:recordViewForm>
+
+</aura:component>	
