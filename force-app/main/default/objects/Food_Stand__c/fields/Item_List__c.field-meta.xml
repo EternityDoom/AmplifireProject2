@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Item_List__c</fullName>
+    <deprecated>false</deprecated>
     <description>A listing of the items that are sold from this stand.</description>
     <externalId>false</externalId>
     <inlineHelpText>A listing of the items that are sold from this stand.</inlineHelpText>
