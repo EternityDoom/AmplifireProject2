@@ -4,6 +4,16 @@
  */
 public with sharing class foodStandUpdates {
 
+    @AuraEnabled(cacheable=true)
+    public static List<String> retrieveFoodNames() {
+        List<String> results = new List<String>();
+        List<Food__c> foods = [SELECT Name FROM Food__c];
+        for(Food__c food : foods){
+            results.add(food.Name);
+        }
+        return results;
+    }
+
     // Used to get the data from the Food Stand so that the selector can be displayed.
     @AuraEnabled(cacheable=true)
     public static List<String> retrieveFoodStand(String id) {

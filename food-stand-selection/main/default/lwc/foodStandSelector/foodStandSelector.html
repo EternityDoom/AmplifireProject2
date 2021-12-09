@@ -1,3 +1,11 @@
 <template>
-    
+    <lightning-card title='Food Selector'>
+        <template if:true={editable}>
+            <lightning-combobox name="typePicker" label="Type" value="openRack" options={typeList} onchange={handleTypeChanged} required></lightning-combobox>
+        </template>
+        <template if:false={editable}>
+            <lightning-formatted-text value={typeLabel}></lightning-formatted-text>
+        </template>
+        <canvas name="standDisplay" width="500" height="600"></canvas>
+    </lightning-card>
 </template>
