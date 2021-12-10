@@ -4,7 +4,10 @@
         <members>*</members>
         <name>CustomObject</name>
     </types>
-    
+    <types>
+        <members>*</members>
+        <name>CustomMetaData</name>
+    </types>
     <types>
         <members>*</members>
         <name>ApexClass</name>
