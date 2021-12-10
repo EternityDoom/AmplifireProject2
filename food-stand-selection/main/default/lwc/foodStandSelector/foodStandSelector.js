@@ -6,7 +6,7 @@ import FOOD_IMAGES from '@salesforce/resourceUrl/food_images';
 import STAND_IMAGES from '@salesforce/resourceUrl/stand_images';
 
 export default class FoodStandSelector extends LightningElement {
-    typeList = [{'label': 'Open Rack', 'value': 'openRack', 'slots': [5, 5, 5]},
+    typeList = [{'label': 'Open Rack', 'value': 'openRack', 'slots': [3, 4, 5]},
                 {'label': 'Platter Tower', 'value': 'platterTower', 'slots': [5, 5, 5]},
                 {'label': 'Refridgerated Drink Rack', 'value': 'drinkFridge', 'slots': [5, 5, 5]},
                 {'label': 'Refridgerated Rack', 'value': 'fridge', 'slots': [5, 5, 5]},
@@ -179,6 +179,7 @@ export default class FoodStandSelector extends LightningElement {
     }
 
     redrawStandDisplay(){
+        this.standDisplayContext.clearRect(0, 0, 500, 600);
         if (this.errorMsg){
             this.standDisplayContext.fillText(this.errorMsg, 10, 10);
         } else {

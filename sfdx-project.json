@@ -15,8 +15,7 @@
             "default": false,
             "dependencies": [
                 {
-                   "package": "AmplifireP2Base@0.1.0-1"
-    
+                    "package": "AmplifireP2Base@0.1.0-1"
                 }
             ]
         }
@@ -28,6 +27,7 @@
     "packageAliases": {
         "AmplifireP2Base": "0Ho5f000000GmsBCAS",
         "AmplifireP2Base@0.1.0-1": "04t5f000000NEzEAAW",
-        "FoodStandSelection": "0Ho5f000000GmsGCAS"
+        "FoodStandSelection": "0Ho5f000000GmsGCAS",
+        "AmplifireP2Base@0.1.0-2": "04t5f000000NKElAAO"
     }
 }
