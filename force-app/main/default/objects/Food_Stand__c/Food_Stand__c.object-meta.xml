@@ -143,7 +143,6 @@
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <deprecated>false</deprecated>
     <description>Represents a real-world food stand in a customer&apos;s cafeteria, which holds a selection of products that the customer&apos;s employees or guests can buy.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -163,7 +162,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Food Stands</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

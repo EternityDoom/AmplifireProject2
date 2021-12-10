@@ -1,9 +1,11 @@
 import { wire, api, LightningElement } from 'lwc';
 
-import { retrieveFoodNames, retrieveFoodStand, updateFoodStandType, updateFoodStandList } from '@salesforce/apex/foodStandUpdates.retrieveFoodStand';
+import retrieveFoodNames from '@salesforce/apex/foodStandUpdates.retrieveFoodNames';
+import retrieveFoodStand from '@salesforce/apex/foodStandUpdates.retrieveFoodStand';
+import updateFoodStandType from '@salesforce/apex/foodStandUpdates.updateFoodStandType';
+import updateFoodStandList from '@salesforce/apex/foodStandUpdates.updateFoodStandList';
 
-import FOOD_IMAGES from '@salesforce/resourceUrl/food_images';
-import STAND_IMAGES from '@salesforce/resourceUrl/stand_images';
+import IMAGES from '@salesforce/resourceUrl/foodStand';
 
 export default class FoodStandSelector extends LightningElement {
     typeList = [{'label': 'Open Rack', 'value': 'openRack', 'slots': [3, 4, 5]},
@@ -159,7 +161,7 @@ export default class FoodStandSelector extends LightningElement {
             return foodImages[foodName];
         } else {
             let newImage = new Image();
-            newImage.src = FOOD_IMAGES + '/' + foodName + '.png';
+            newImage.src = IMAGES + '/foodImages/' + foodName + '.png';
             newImage.onload = this.redrawStandDisplay();
             foodImages[foodName] = newImage;
             return newImage;
@@ -171,7 +173,7 @@ export default class FoodStandSelector extends LightningElement {
             return foodImages[standName];
         } else {
             let newImage = new Image();
-            newImage.src = STAND_IMAGES + '/' + standName + '.png';
+            newImage.src = IMAGES + '/standImages/' + standName + '.png';
             newImage.onload = this.redrawStandDisplay();
             standImages[standName] = newImage;
             return newImage;
