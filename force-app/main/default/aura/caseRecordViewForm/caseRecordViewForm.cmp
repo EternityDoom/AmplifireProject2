@@ -6,8 +6,8 @@
     <lightning:card title="Open Cases">
         <lightning:accordion>
             <aura:iteration items="{!v.caseId}" var="caseId">
-                <lightning:accordionSection label="{!caseId}">
-                    <c:caseRecordAccordian caseId="{!caseId}"></c:caseRecordAccordian>
+                <lightning:accordionSection label="{!v.caseId}">
+                    <c:caseRecordAccordian caseId="{!v.caseId}"></c:caseRecordAccordian>
                 </lightning:accordionSection>
             </aura:iteration>
         </lightning:accordion>
