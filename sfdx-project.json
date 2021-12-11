@@ -18,6 +18,18 @@
                     "package": "AmplifireP2Base@0.1.0-2"
                 }
             ]
+        },
+        {
+            "path": "user-order-helper",
+            "package": "UserOrderHelper",
+            "versionName": "V1 - Initial",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "AmplifireP2Base@0.1.0-2"
+                }
+            ]
         }
     ],
     "name": "AmplifireProject2",
@@ -32,6 +44,7 @@
         "FoodStandSelection@0.1.0-1": "04t5f000000NKmlAAG",
         "FoodStandSelection@0.1.0-2": "04t5f000000NKmqAAG",
         "FoodStandSelection@0.1.0-3": "04t5f000000NKr3AAG",
-        "FoodStandSelection@0.1.0-4": "04t5f000000NLaxAAG"
+        "FoodStandSelection@0.1.0-4": "04t5f000000NLaxAAG",
+        "UserOrderHelper": "0Ho5f000000GmspCAC"
     }
 }
