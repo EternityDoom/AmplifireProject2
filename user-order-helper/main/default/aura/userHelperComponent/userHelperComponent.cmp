@@ -5,7 +5,7 @@
         <lightning:recordViewForm recordId="{v.orderId}" objectApiName="Order">
             <div class="slds-box">
                 <lightning:outputField fieldName="OrderNumber" />
-                <lightning:outputField fieldName="OrderedDate" />
+                <lightning:outputField fieldName="EffectiveDate" />
                 <lightning:outputField fieldName="ShippingStreet" />
                 <lightning:outputField fieldName="ShippingCity" />
                 <lightning:outputField fieldName="ShippingState" />
