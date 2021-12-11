@@ -1,0 +1,13 @@
+<aura:component description="Aura component parent of FoodStandSelection lwc, provides record id value."
+                implements = "forceCommunity:availableForAllPageTypes"
+                controller="foodStandRecordSearch">
+    <aura:handler name="init" value="{!this}" action="{c.init}"/>
+    <aura:attribute name="options" type="List" 
+    default="[
+    {'label': 'Select a food stand', 'value': ''}
+    ]"/>
+    <div>
+        <c:foodStandSelector aura:id="childLWC"></c:foodStandSelector>
+    </div>
+    <lightning:combobox name="foodStandChoice" label="Food Stand" value="" placeholder="Select a food stand" options="{!v.options }" onchange="{!c.handleChange}"/>
+</aura:component>	

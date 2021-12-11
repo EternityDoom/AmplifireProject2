@@ -7,12 +7,12 @@
         {
             "path": "foodObjectDisplay",
             "package": "FoodObjectDisplay",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT",
+            "versionName": "Version 1",
+            "versionNumber": "1.0.0.NEXT",
             "default": false,
             "dependencies": [
                 {
-                    "package": "AmplifireP2Base@0.1.0.2"
+                    "package": "AmplifireP2Base@0.1.0-2"
                 }
             ]
         }
@@ -22,7 +22,8 @@
     "sfdcLoginUrl": "https://login.salesforce.com",
     "sourceApiVersion": "52.0",
     "packageAliases": {
-        "FoodInformationDisplay": "0Ho5f000000GmsVCAS",
-        "FoodObjectDisplay": "0Ho5f000000GmskCAC"
+        "AmplifireP2Base@0.1.0-2": "04t5f000000NKElAAO",
+        "FoodObjectDisplay": "0Ho5f000000GmskCAC",
+        "FoodObjectDisplay@1.0.0-1": "04t5f000000NLb2AAG"
     }
 }

@@ -3,10 +3,9 @@
     <apiVersion>52.0</apiVersion>
     <isExposed>true</isExposed>
     <targets>
-        <target>lightning__AppPage</target>
-        <target>lightning__RecordPage</target>
-        <target>lightning__HomePage</target>
-        <target>lightningCommunity__Default</target>
         <target>lightningCommunity__Page</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__FlowScreen</target>
     </targets>
 </LightningComponentBundle>
