@@ -1,12 +1,34 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        },
+        {
+            "path": "food-stand-selection",
+            "package": "FoodStandSelection",  
+            "versionName": "V1 - Initial",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false,
+            "dependencies": [
+              {
+                "package": "Amplifire@2Base@0.1.0-2"
+              }
+            ]
+        }, 
+        {
+            "path": "emmanuel-package",
+            "package": "Emmanuel",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
+        }
+    ],
+    "name": "AmplifireProject2",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "52.0",
+    "packageAliases": {
+        "Emmanuel": "0Ho5f000000GmsfCAC"
     }
-  ],
-  "name": "AmplifireProject2",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0"
 }
